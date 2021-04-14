@@ -686,7 +686,7 @@ End Function
 Private Sub suBaixarOS(ByVal vOSID As Long, ByVal vReporteTecnico As String, ByVal vDataInicio As Date, ByVal vDataBaixa As Date, ByVal vEMail As String, ByVal vUsuario As String, ByVal vEMailAtendente As String, ByVal vTempoParadaEmSegundos As Long)
 On Error GoTo Erro
 
-    strSQL = "UPDATE tb_OS SET ReporteTecnico = '" & vReporteTecnico & "',DataInicio = '" & vDataInicio & "', DataBaixa = '" & vDataBaixa & "', Status = 2, DataBaixaAtual = '" & Now & "', TempoParadaSegundos = " & vTempoParadaEmSegundos & " WHERE OSID = " & vOSID
+    strSQL = "UPDATE tb_OS SET ReporteTecnico = '" & vReporteTecnico & "',DataInicio = '" & vDataInicio & "', DataBaixa = '" & vDataBaixa & "', Status = 2, DataBaixaAtual = '" & Now & "', TempoParadaSegundos = " & vTempoParadaEmSegundos & ", Atendente = '" & Trim(gstrNome) & "' WHERE OSID = " & vOSID
     Set rs = New ADODB.Recordset
     rs.Open strSQL, cn, adOpenKeyset, adLockOptimistic
     

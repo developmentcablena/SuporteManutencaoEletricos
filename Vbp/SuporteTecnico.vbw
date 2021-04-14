@@ -1,6 +1,6 @@
 frmPrincipal = 46, 46, 740, 650, C, 5, 4, 817, 713, C
 Geral = 2, 4, 1507, 956, C
-frmSuporteSistemas = 93, 26, 786, 630, Z, 15, 10, 708, 614, C
+frmSuporteSistemas = 93, 26, 786, 630, C, 15, 10, 708, 614, C
 frmChamados = 292, 34, 1001, 654, C, -1, -1, 1311, 929, C
 acrOS = 66, 87, 854, 686, C, -5, -2, 803, 763, C
 frmReporteTecnico = 201, 99, 894, 703, C, 77, 34, 771, 638, C

@@ -32,7 +32,7 @@ Public Sub ConectarBD()
     'strBD = "PROVIDER=SQLOLEDB;SERVER=192.168.0.249\SQLExpress;DATABASE=SuporteManutencao;UID=cablena_user;PWD=C@bl3na;"
     'strBD = "PROVIDER=SQLOLEDB;SERVER=192.168.0.7;DATABASE=suportemanutencao_teste;UID=helpdesk;PWD=H3lpD3sk;"
     'Conexão com a Elétricos
-    strBD = "PROVIDER=SQLOLEDB;SERVER=196.200.80.10;DATABASE=SuporteManutencao_test;UID=cablena_user;PWD=C@bl3na;"
+    strBD = "PROVIDER=SQLOLEDB;SERVER=196.200.80.10;DATABASE=SuporteManutencao;UID=cablena_user;PWD=C@bl3na;"
     Set cn = New ADODB.Connection
     cn.CursorLocation = adUseClient
     cn.Open (strBD)
